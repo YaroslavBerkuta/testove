@@ -9,7 +9,7 @@ router.post("/login", AuthController.login);
 router.post(
   "/upload-csv",
   authenticateToken,
-  upload.single("csvFile"),
+  upload.single("file"),
   DataController.uploadCSV
 );
 
